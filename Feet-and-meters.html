@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feet and Meter</title>
+</head>
+<body>
+<h2>Chuyển đổi giữa feet và meters</h2>
+<table>
+  <tr>
+    <th>Number</th>
+    <th>From-To</th>
+  </tr>
+  <tr>
+    <td><label><input id="inputNumber" type="number"></label></td>
+    <td><label>
+      <select name="fromto" id="formto">
+      <option value="0.305">Feet to Meters</option>
+      <option value="3.279">Meters to Feet</option>
+      </select>
+    </label></td>
+    <td>
+      <input type="button" value="Convert" id="convert" onclick="convert()">
+    </td>
+  </tr>
+</table>
+<br>
+<span>Result: </span><span id="result"></span>
+<script>
+  function convert() {
+    let N_in = document.getElementById('inputNumber').value;
+    let formto = document.getElementById('formto').value;
+    let result = N_in*formto;
+    document.getElementById('result').innerHTML = result;
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exp9</title>
+</head>
+<body>
+<script>
+  let arr = [0,1,2,3,4,5,6,7,8,9];
+  let n = +prompt("nhập ký tự");
+  if (check() > 0){
+    alert(check());
+  } else {
+    alert("-1");
+  }
+  function check() {
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (n == arr[i]) {
+        count += 1;
+      }
+    }return count;
+  }
+</script>
+</body>
+</html>

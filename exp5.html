@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exp5</title>
+</head>
+<body>
+<h4>Nhập tên ngôi sao</h4>
+<input type="text" id="starin">
+<button onclick="findStar()">Search</button>
+<br>
+<br>
+<span><strong>Result: </strong></span><span id="result"></span>
+<script>
+    function findStar() {
+        let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        let star = document.getElementById("starin").value;
+        let check = true;
+        let result = document.getElementById("result");
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] == star) {
+                check = true;
+                result.innerHTML = arr2[i];
+                break;
+            }
+            check = false;
+        } if ( check = false) {
+            result.innerHTML = "Không tìm thấy kết quả"
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Min</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập số thứ nhất:");
+    let b = +prompt("Nhập số thứ hai:");
+    let c = +prompt("Nhập số thứ ba:");
+    checkMin();
+    function checkMin() {
+        if (a < b && a < c) {
+            alert(a + " là số nhỏ nhất");
+        } else if (b < c) {
+            alert(b + " là số nhỏ nhất");
+        } else {
+            alert(c + " là số nhỏ nhất");
+        }
+    }
+</script>
+
+</body>
+</html>

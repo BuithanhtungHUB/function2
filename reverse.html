@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse</title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhập số thứ nhất");
+    let b = +prompt("nhập số thứ hai");
+    dao();
+
+    function dao() {
+        let c = a;
+        a = b;
+        b = c;
+        alert(`Sau khi đảo ta được: ${a}; ${b}`);
+    }
+</script>
+</body>
+</html>

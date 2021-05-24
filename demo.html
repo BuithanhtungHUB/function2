@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let arr = [1, 2, 3, 4];
+
+    function del() {
+        let index = +prompt("nhập vị trí muốn xóa");
+        for (let i = index; i < arr.length; i++) {
+            arr[i] = arr[i + 1];
+        }
+        arr[arr.length - 1] = null;
+        let arr1 = [];
+        for (let j = 0; j < arr.length - 1; j++) {
+            arr1[j] = arr[j];
+        }
+        console.log(arr1);
+        return arr1;
+    }
+
+    document.write(del());
+    /*let arr = [1,2,3,2];
+     function add() {
+         let index = +prompt("nhập vị trí muốn thêm");
+         let value = +prompt("nhập phần tử muốn thêm");
+         for (let i = arr.length-1; i >= index ; i--) {
+             arr[i+1]= arr[i];
+         }
+         arr[index] = value;
+         console.log(arr);
+         return arr;
+     }
+     document.write(add());*/
+</script>
+</body>
+</html>
